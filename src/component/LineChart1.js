@@ -35,20 +35,14 @@ export const options = {
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['1', '2', '3', '4', '5', '6', '7'];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
-      data: [90, 120, 30, 70, 70, 35, 80],
-      borderColor: 'rgb(255, 99, 132)',
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-    },
-    {
-      label: 'Dataset 2',
-      data: [100, 100, 30, 70, 40, 55, 60],
+      label: 'wh',
+      data: [80, 70, 21, 44, 42, 85, 60],
       borderColor: 'rgb(53, 162, 235)',
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },

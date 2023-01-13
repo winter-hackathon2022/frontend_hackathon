@@ -41,21 +41,17 @@ export const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
-      data: [90, 120, 30, 70, 70, 35, 80],
+      label: 'kWh',
+      data: [90, 100, 50, 70, 70, 35, 80],
       borderColor: 'rgb(255, 99, 132)',
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
-    },
-    {
-      label: 'Dataset 2',
-      data: [100, 100, 30, 70, 40, 55, 60],
-      borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },
   ],
 };
 
 export default function LineChart() {
+  fetch('https://a2f2-211-182-230-53.jp.ngrok.io/')
+  .then(response => response.json());
   return <div className='chart'>
     <Line options={options} data={data}/>
   </div>;

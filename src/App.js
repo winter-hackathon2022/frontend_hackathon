@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div id="memo">
         <div className="m" ref={m}>
-          {on ? <img src="./img/onlight.png"></img> : <img src="./img/offlight.png"></img>}
+          <img src={on ? "./img/onlight.png" :"./img/offlight.png" }></img>
           <Toggle on={on} setOn={setOn}
           ></Toggle>
           {on ? <p id="onLight">Light</p> : <p id="offLight">Light</p>}
